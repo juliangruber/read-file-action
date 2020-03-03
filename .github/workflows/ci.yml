@@ -10,7 +10,7 @@ jobs:
         run: |
           npm ci
           npm run build
-      - uses: .
+      - uses: ./
         id: package
         with:
           path: package.json
