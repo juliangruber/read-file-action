@@ -14,4 +14,3 @@ jobs:
         id: package
         with:
           path: package.json
-      - run: echo ${{ steps.package.outputs.content }}
