@@ -1,7 +1,7 @@
 {
   "name": "read-file-action",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "license": "MIT",
   "description": "Read file contents",
   "repository": "juliangruber/read-file-action",
