@@ -8,6 +8,12 @@ inputs:
   path:
     description: 'File path'
     required: true
+  mask:
+    description: 'Hidden file content'
+    required: false
+  trim:
+    description: 'Trim file content'
+    required: false
 outputs:
   content:
     description: 'File content'
