@@ -8,7 +8,7 @@ const main = async () => {
   const trim = core.getBooleanInput('trim')
   let content = await fs.readFile(path, 'utf8')
   if (trim) {
-    content = content.trim
+    content = content.trim()
   }
 
   core.setOutput('content', content)
