@@ -14,3 +14,4 @@ jobs:
         id: package
         with:
           path: package.json
+          trim: true

@@ -5,7 +5,12 @@ const { promises: fs } = require('fs')
 
 const main = async () => {
   const path = core.getInput('path')
-  const content = await fs.readFile(path, 'utf8')
+  const trim = core.getBooleanInput('trim')
+  let content = await fs.readFile(path, 'utf8')
+  if (trim) {
+    content = content.trim
+  }
+
   core.setOutput('content', content)
 }
 

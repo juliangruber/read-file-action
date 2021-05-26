@@ -8,6 +8,9 @@ inputs:
   path:
     description: 'File path'
     required: true
+  trim:
+    description: 'Trims output'
+    required: false
 outputs:
   content:
     description: 'File content'
