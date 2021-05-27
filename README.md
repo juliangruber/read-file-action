@@ -1,6 +1,7 @@
 # read-file-action
 
 Read file contents.
+Note: Forked to control release schedule and changes.
 
 ## Usage
 
@@ -8,7 +9,7 @@ Read file contents.
 steps:
   - name: Read package.json
     id: package
-    uses: juliangruber/read-file-action@v1
+    uses: travelaudience/read-file-action@v1
     with:
       path: ./package.json
   - name: Echo package.json
