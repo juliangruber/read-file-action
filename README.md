@@ -11,9 +11,8 @@ steps:
     uses: juliangruber/read-file-action@v1
     with:
       path: ./package.json
-      trim: false
   - name: Echo package.json
-    run: echo ${{ steps.package.outputs.content }}
+    run: echo "${{ steps.package.outputs.content }}"
 ```
 
 ## License
