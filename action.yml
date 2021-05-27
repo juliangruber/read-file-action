@@ -11,7 +11,7 @@ inputs:
   trim:
     description: 'Trims output'
     required: false
-    default: 'false'
+    default: false
 outputs:
   content:
     description: 'File content'
