@@ -18,3 +18,5 @@ jobs:
         with:
           path: package.json
           trim: true
+      - name: Echo package version
+        run: echo "${{ JSON.parse(steps.package.outputs.content).version }}"
