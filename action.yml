@@ -16,5 +16,5 @@ outputs:
   content:
     description: 'File content'
 runs:
-  using: 'node12'
+  using: 'node16'
   main: 'dist/index.js'
