@@ -6,6 +6,8 @@ Read file contents.
 
 ```yaml
 steps:
+  - name: Checkout repository
+    uses: actions/checkout@v3
   - name: Read package.json
     id: package
     uses: juliangruber/read-file-action@v1
