@@ -18,9 +18,9 @@
     "@actions/core": "^1.10.0"
   },
   "devDependencies": {
-    "@zeit/ncc": "^0.20.5",
-    "np": "^7.5.0",
-    "prettier-standard": "^15.0.1",
-    "standard": "^14.3.1"
+    "@vercel/ncc": "^0.36.1",
+    "np": "^8.0.4",
+    "prettier-standard": "^16.4.1",
+    "standard": "^17.1.0"
   }
 }
