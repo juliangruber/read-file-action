@@ -6,7 +6,7 @@
   "description": "Read file contents",
   "repository": "juliangruber/read-file-action",
   "scripts": {
-    "test": "prettier-standard index.js && standard index.js",
+    "test": "standard --fix index.js",
     "build": "ncc build index.js",
     "version": "npm run build && git add dist",
     "release": "np && git tag -f v1 && git push --tags -f"
@@ -20,7 +20,6 @@
   "devDependencies": {
     "@vercel/ncc": "^0.36.1",
     "np": "^8.0.4",
-    "prettier-standard": "^16.4.1",
     "standard": "^17.1.0"
   }
 }
