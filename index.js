@@ -1,17 +1,17 @@
-'use strict'
+'use strict';
 
-const core = require('@actions/core')
-const { promises: fs } = require('fs')
+const core = require('@actions/core');
+const { readFile } = require('fs/promises');
 
 const main = async () => {
-  const path = core.getInput('path')
-  const trim = core.getBooleanInput('trim')
-  let content = await fs.readFile(path, 'utf8')
-  if (trim) {
-    content = content.trim()
+  try {
+    const path = core.getInput('path');
+    const trim = core.getBooleanInput('trim');
+    const content = await readFile(path, 'utf8');
+    core.setOutput('content', trim ? content.trim() : content);
+  } catch (err) {
+    core.setFailed(err.message);
   }
+};
 
-  core.setOutput('content', content)
-}
-
-main().catch(err => core.setFailed(err.message))
+main();
